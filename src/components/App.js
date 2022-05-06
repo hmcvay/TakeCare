@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import Home from './Home';
 import PostList from './PostList';
+import AddPost from './AddPost';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -31,6 +32,16 @@ const App = () => {
           name="Home" 
           component={Home}
           // options={{headerShown: false}} 
+        />
+        <Stack.Screen
+          name="AddPost"
+          component={AddPost}
+          options={{
+            title: 'Add post!',
+            headerStyle:{
+              fontWeight:'bold',
+            },
+          }}
         />
         <Stack.Screen
           name="PostList"
