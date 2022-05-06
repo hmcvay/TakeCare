@@ -28,7 +28,7 @@ function Home({navigation}){
           marginBottom: 20,
         }}>
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <Text>This is a home screen</Text>
+          <Text>Click to enter app</Text>
         </View>
       </TouchableOpacity>
     </SafeAreaView> 
