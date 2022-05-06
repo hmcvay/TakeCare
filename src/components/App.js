@@ -8,6 +8,7 @@ import {
 import Home from './Home';
 import PostList from './PostList';
 import AddPost from './AddPost';
+import PostDetails from './PostDetails';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -46,6 +47,10 @@ const App = () => {
         <Stack.Screen
           name="PostList"
           component={PostList}
+        />
+        <Stack.Screen 
+          name="PostDetails"
+          component={PostDetails}
         />
       </Stack.Navigator>
     </NavigationContainer>
