@@ -3,23 +3,36 @@ import {
   View,
   Text,
   StyleSheet,
+  TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 
 function Home({navigation}){
   return(
-    <View style={styles.container}>
-      <Text>This is a home screen</Text>
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fcc9a8',
+      }}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('PostList')}
+        style={{
+          width: '80%',
+          padding: 15,
+          color: '#fcc9a8',
+          borderRadius: 10,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          marginBottom: 20,
+        }}>
+        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+          <Text>This is a home screen</Text>
+        </View>
+      </TouchableOpacity>
+    </SafeAreaView> 
   )
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default Home;

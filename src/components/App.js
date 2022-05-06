@@ -6,6 +6,7 @@ import {
   View,
 } from 'react-native';
 import Home from './Home';
+import PostList from './PostList';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -30,6 +31,10 @@ const App = () => {
           name="Home" 
           component={Home}
           // options={{headerShown: false}} 
+        />
+        <Stack.Screen
+          name="PostList"
+          component={PostList}
         />
       </Stack.Navigator>
     </NavigationContainer>
