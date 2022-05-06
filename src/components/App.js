@@ -9,9 +9,9 @@ import Home from './Home';
 import PostList from './PostList';
 import AddPost from './AddPost';
 import PostDetails from './PostDetails';
-
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {db} from './../firebase/firebase-config';
 
 const Stack = createNativeStackNavigator();
 
