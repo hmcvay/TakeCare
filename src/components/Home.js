@@ -23,7 +23,7 @@ function Home({navigation}){
         style={{
           width: '80%',
           padding: 15,
-          color: '#fcc9a8',
+          // color: '#fcc9a8',
           borderRadius: 10,
           flexDirection: 'row',
           justifyContent: 'space-between',
@@ -33,6 +33,7 @@ function Home({navigation}){
           <Image 
             className="logo"
             source={Logo}
+            style={{width:400, resizeMode: 'contain'}}
           />
           <Text>Click to enter app</Text>
 

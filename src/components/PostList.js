@@ -15,7 +15,7 @@ function PostList({navigation}){
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#fcc9a8',
+      backgroundColor: '#efeee9',
     }}>
     <View >
       <Text>POST LIST</Text>

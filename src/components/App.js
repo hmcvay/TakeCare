@@ -22,11 +22,10 @@ const App = () => {
         initialRouteName='Home'
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#ffffff',
+            backgroundColor: '#efeee9',
           },
           headerTintColor: '#2980ff',
           headerTitleStyle: {
-            fontWeight: 'bold',
           },
         }}>
         <Stack.Screen 
@@ -40,13 +39,19 @@ const App = () => {
           options={{
             title: 'Add post!',
             headerStyle:{
-              fontWeight:'bold',
+              backgroundColor: '#efeee9',
             },
           }}
         />
         <Stack.Screen
           name="PostList"
           component={PostList}
+          options = {{
+            title: 'Feed',
+            headerStyle:{
+              backgroundColor: '#efeee9',
+            },
+          }}
         />
         <Stack.Screen 
           name="PostDetails"

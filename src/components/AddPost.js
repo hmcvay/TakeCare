@@ -43,7 +43,7 @@ function AddPost({navigation}){
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fcc9a8',
+        backgroundColor: '#efeee9',
       }}>
       <TouchableOpacity
         onPress={() => navigation.navigate('PostList')}
