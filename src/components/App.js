@@ -11,7 +11,7 @@ import AddPost from './AddPost';
 import PostDetails from './PostDetails';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {db} from './../firebase/firebase-config';
+// import {db} from './../firebase/firebase-config';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,9 +22,9 @@ const App = () => {
         initialRouteName='Home'
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#2980ff',
+            backgroundColor: '#ffffff',
           },
-          headerTintColor: '#d2e6ef',
+          headerTintColor: '#2980ff',
           headerTitleStyle: {
             fontWeight: 'bold',
           },
@@ -32,7 +32,7 @@ const App = () => {
         <Stack.Screen 
           name="Home" 
           component={Home}
-          // options={{headerShown: false}} 
+          options={{headerShown: false}} 
         />
         <Stack.Screen
           name="AddPost"

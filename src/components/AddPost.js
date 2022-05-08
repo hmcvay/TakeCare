@@ -6,31 +6,31 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-import {db} from './../firebase/fireabase-config';
+// import {db} from './../firebase/fireabase-config';
 import {v4 as uuid} from 'uuid';
 import PropTypes from 'prop-types';
-import {doc, setDoc, getDocs} from 'firebase.firestore';
-import NativeImagePickerIOS from 'react-native/Libraries/Image/NativeImagePickerIOS';
-import ImagePicker from 'react-native-image-crop-picker';
+// import {doc, setDoc, getDocs} from 'firebase.firestore';
+// import NativeImagePickerIOS from 'react-native/Libraries/Image/NativeImagePickerIOS';
+// import ImagePicker from 'react-native-image-crop-picker';
 
 function AddPost({navigation}){
 
-  const [titleInput, setTitle] = useState('');
-  const onChangeTitle = titleValue => setTitle(titleValue);
-  const [descriptionInput, setDescription] = useState('');
-  const onChangeDescription = descriptionValue => setDescription(descriptionValue);
-  const [imageState, setImage] = useState('');
+  // const [titleInput, setTitle] = useState('');
+  // const onChangeTitle = titleValue => setTitle(titleValue);
+  // const [descriptionInput, setDescription] = useState('');
+  // const onChangeDescription = descriptionValue => setDescription(descriptionValue);
+  // const [imageState, setImage] = useState('');
 
-  function takePhoto(){
-    NativeImagePickerIOS.openCamera({
-      width: 400,
-      height: 500,
-      cropping: true,
-    }).then(image => {
-      const imageUri = Platform.OS === 'ios' ? image.sourceURL : image.path;
-      setImage(imageUri);
-    });
-  }
+  // function takePhoto(){
+  //   NativeImagePickerIOS.openCamera({
+  //     width: 400,
+  //     height: 500,
+  //     cropping: true,
+  //   }).then(image => {
+  //     const imageUri = Platform.OS === 'ios' ? image.sourceURL : image.path;
+  //     setImage(imageUri);
+  //   });
+  // }
 
   // const onPressAddPost = async () => {
 

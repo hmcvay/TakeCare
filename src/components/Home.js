@@ -5,7 +5,9 @@ import {
   StyleSheet,
   TouchableOpacity,
   SafeAreaView,
+  Image,
 } from 'react-native';
+import Logo from './../assets/takeCareTransparent.png';
 
 function Home({navigation}){
   return(
@@ -14,7 +16,7 @@ function Home({navigation}){
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fcc9a8',
+        backgroundColor: '#efeee9',
       }}>
       <TouchableOpacity
         onPress={() => navigation.navigate('PostList')}
@@ -28,7 +30,12 @@ function Home({navigation}){
           marginBottom: 20,
         }}>
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+          <Image 
+            className="logo"
+            source={Logo}
+          />
           <Text>Click to enter app</Text>
+
         </View>
       </TouchableOpacity>
     </SafeAreaView> 
