@@ -6,14 +6,14 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
-// import {db} from './../firebase/fireabase-config';
+import {db} from './../firebase/fireabase-config';
 import {v4 as uuid} from 'uuid';
 import PropTypes from 'prop-types';
-import {doc, setDoc, getDocs} from 'firebase.firestore';
+import {doc, setDoc, getDocs, Timestamp} from 'firebase.firestore';
 // import NativeImagePickerIOS from 'react-native/Libraries/Image/NativeImagePickerIOS';
 // import ImagePicker from 'react-native-image-crop-picker';
 
-function AddPost({navigation}){
+const AddPost = ({navigation}) => {
 
   const [titleInput, setTitle] = useState('');
   const onChangeTitle = titleValue => setTitle(titleValue);
@@ -33,6 +33,16 @@ function AddPost({navigation}){
   // }
 
   const onPressAddPost = async () => {
+    if (titleInput !== ''){
+      const id = uuid();
+      await setDoc(doc(db, 'posts', id), {
+        id: id,
+        title: titleInput,
+        description: descriptionInput,
+        time: Timestamp.fromDate(newDate()),
+        is_met: false,
+      });
+    }
 
   }
 
