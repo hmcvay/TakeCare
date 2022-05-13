@@ -12,3 +12,6 @@ TECH RESOURCES:
 1) Watch simplified tutorial on React.
 2) Watch Redux tutorial.
 3) Start learn React Native course
+
+
+//X CODE//
