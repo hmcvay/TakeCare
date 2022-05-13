@@ -5,6 +5,7 @@ TECH STACK PLAN:
 * HTML
 * CSS
 * NoSql?
+*XCODE
 
 TECH RESOURCES:
 (numbers correspond to videos on 'resources.txt' file)
@@ -14,4 +15,3 @@ TECH RESOURCES:
 3) Start learn React Native course
 
 
-//X CODE//
