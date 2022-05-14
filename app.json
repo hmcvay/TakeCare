@@ -1,11 +1,4 @@
 {
-  "expo": {
-    "name": "take-care",
-    "slug": "take-care",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  },
-  "name": "take-care"
+  "name": "TakeCare",
+  "displayName": "TakeCare"
 }
